@@ -31,6 +31,10 @@ public abstract class Playable extends Multimedia implements Volume, StartPlayab
         return volume;
     }
 
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
     public int getDuration() {
         return duration;
     }
@@ -38,8 +42,7 @@ public abstract class Playable extends Multimedia implements Volume, StartPlayab
     public void setDuration(int duration) {
         this.duration = duration;
     }
-
-    //Interface volume
+//Interface volume
 
     public void volumeUp() {
         this.volume++;

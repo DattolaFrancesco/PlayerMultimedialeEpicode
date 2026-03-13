@@ -25,6 +25,13 @@ public class Video extends Playable implements Brightness {
         return brightness;
     }
 
+    // serve principalmente per le funzioni di modifica dallo scanner
+    public void setBrightness(int n) {
+        this.brightness = n;
+        if (this.brightness > 5) this.brightness = 5;
+        else if (this.brightness < 0) this.brightness = 0;
+    }
+
     public void brightnessUp() {
         this.brightness++;
         if (this.brightness > 5) this.brightness = 5;
