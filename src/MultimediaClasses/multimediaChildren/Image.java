@@ -2,6 +2,7 @@ package MultimediaClasses.multimediaChildren;
 
 import MultimediaClasses.Multimedia;
 import interfaces.Brightness;
+import interfaces.ShowUnPlayable;
 
 public class Image extends Multimedia implements Brightness, ShowUnPlayable {
 
@@ -53,5 +54,13 @@ public class Image extends Multimedia implements Brightness, ShowUnPlayable {
             brightnessLength += "*";
         }
         System.out.println(getTitle() + brightnessLength);
+    }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "title=" + getTitle() +
+                ", brightness=" + brightness +
+                '}';
     }
 }

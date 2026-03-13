@@ -1,4 +1,4 @@
-package MultimediaClasses.multimediaChildren;
+package interfaces;
 
 public interface ShowUnPlayable {
     void show();
